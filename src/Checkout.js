@@ -16,7 +16,7 @@ function Checkout() {
       <div className="checkout__left">
         <img
           className="checkout__ad"
-          src="https://www.coolmilk.com/wp-content/uploads/250-newsletter-banner-advert.png"
+          src="https://www.filepicker.io/api/file/Ons9PGIJSKCAtl19GgJN"
           alt=""
         />
         <div>

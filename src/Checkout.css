@@ -3,14 +3,14 @@
   padding: 20px;
   background-color: #fff;
   height: max-content;
-  margin: auto;
   max-width: 1240px;
+  margin: auto;
 }
 
 .checkout__ad {
   width: 100%;
   margin-bottom: 10px;
-  height: 150px;
+  height: 200px;
   padding-right: 20px;
   box-sizing: border-box;
   object-fit: cover;

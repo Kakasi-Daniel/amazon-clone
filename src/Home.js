@@ -1,16 +1,46 @@
 import React from 'react';
 import './Home.css';
 import Product from './Product';
+import Carousel from 'react-bootstrap/Carousel';
 
 function Home() {
   return (
     <div className="home">
       <div className="home__container">
-        <img
+        <Carousel style={{zIndex:"1",marginBottom:"-200px"}} >
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_45M_v2_1x._CB432458380_.jpg"
+              alt="First slide"
+            />
+            <Carousel.Caption></Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_Computers_1x._CB432469755_.jpg"
+              alt="Third slide"
+            />
+
+            <Carousel.Caption></Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_Home_v2_en_US_1x._CB429090084_.jpg"
+              alt="Third slide"
+            />
+
+            <Carousel.Caption></Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+
+        {/* <img
           className="home__image"
           src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_Home_v2_en_US_1x._CB429090084_.jpg"
           alt=""
-        />
+        /> */}
 
         <div className="home__row">
           <Product

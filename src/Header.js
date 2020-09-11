@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState}from 'react';
 import './Header.css';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
@@ -16,7 +16,36 @@ function Header() {
     }
   }
 
+  const [btnStatus , change] = useState(["ham__btn"]);
+
+  const openMenu = () => {
+    if(btnStatus.length === 1){
+      change([...btnStatus, "opened"]);
+    }else{
+      change(["ham__btn"]);
+    }
+  }
+
   return (
+    <>
+    <div  className="hamburger__nav">
+      <div onClick={openMenu} className={btnStatus.join(" ")}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <Link to='/'>
+        <img
+          className="header__logo"
+          src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+          alt="header-logo"
+        />
+      </Link>
+      <div className="header__search">
+        <input type="text" className="header__searchInput" />
+        <SearchIcon className="header__searchIcon" />
+      </div>
+    </div>
     <div className="header">
       <Link to='/'>
         <img
@@ -31,8 +60,8 @@ function Header() {
       </div>
       <div className="header__nav">
         
-        {user ? (<div className="header__option">
-          <AccountCircleIcon />
+        {user ? (<div className="header__option myaccount">
+          <p>My account</p> <AccountCircleIcon />
         </div>): null}
         
         <Link to={!user ? 'login' : '/'}>
@@ -63,6 +92,7 @@ function Header() {
         </Link>
       </div>
     </div>
+    </>
   );
 }
 

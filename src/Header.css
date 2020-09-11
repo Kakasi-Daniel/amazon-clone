@@ -9,6 +9,10 @@
   justify-content: space-between;
 }
 
+.hamburger__nav {
+  display: none;
+}
+
 .header__logo {
   width: 100px;
   object-fit: contain;
@@ -71,4 +75,76 @@
   margin-left: 10px;
   margin-right: 10px;
   color: #fff;
+}
+
+.myaccount {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.myaccount > p {
+  transform: translateY(35%);
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  .header {
+    display: none;
+  }
+
+  .hamburger__nav {
+    height: 60px;
+    width: 100vw;
+    background-color: rgb(4, 4, 37);
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+  }
+
+  .ham__btn {
+    width: 70px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .ham__btn > span {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    opacity: 1;
+    transition: transform, 0.3s cubic-bezier(0.47, 0, 0.745, 0.715), opacity,
+      0.3s cubic-bezier(0.47, 0, 0.745, 0.715), background-color,
+      0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+  }
+
+  .opened span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .opened span:first-child {
+    background-color: rgb(230, 23, 23);
+    height: 4px;
+    transform: translateY(19px) rotate(405deg) scale(0.6);
+  }
+
+  .opened span:last-child {
+    background-color: rgb(230, 23, 23);
+    height: 4px;
+    transform: translateY(-17px) rotate(-405deg) scale(0.6);
+  }
+
+  .header__searchInput {
+    width: 50px;
+    height: 50px;
+  }
+  .header__search {
+    width: 50px;
+  }
 }

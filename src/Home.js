@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className="home">
       <div className="home__container">
-        <Carousel style={{zIndex:"1",marginBottom:"-200px"}} >
+        <Carousel className="home__carousel" >
           <Carousel.Item>
             <img
               className="d-block w-100"
@@ -36,18 +36,13 @@ function Home() {
           </Carousel.Item>
         </Carousel>
 
-        {/* <img
-          className="home__image"
-          src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_Home_v2_en_US_1x._CB429090084_.jpg"
-          alt=""
-        /> */}
 
         <div className="home__row">
           <Product
             id="12312312"
             title="Sapiens: A Brief History of Humankind"
             price={15.31}
-            image="https://m.media-amazon.com/images/I/51XyWW6zEXL.jpg"
+            image="https://libris.to/media/jacket/05073384_sapiens.jpg"
             rating={5}
           />
           <Product
@@ -90,6 +85,13 @@ function Home() {
             price={15.49}
             image="https://images-na.ssl-images-amazon.com/images/I/61TrwO9pW%2BL._AC_SL1100_.jpg"
             rating={1}
+          />
+          <Product
+            id="325442"
+            title="Apple MacBook Air 13.3 &quot; with Retina Display, 1.2GHz Quad-Core Intel Core i7, 16GB Memory, 512GB SSD, Space Gray (Early 2020)"
+            price={890.95}
+            image="https://images-na.ssl-images-amazon.com/images/I/61wLbRLshAL._AC_SL1200_.jpg"
+            rating={4}
           />
         </div>
       </div>

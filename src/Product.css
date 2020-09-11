@@ -44,3 +44,10 @@
   transform: scale(1.03);
   cursor: pointer;
 }
+
+@media (max-width: 600px) {
+  .product{
+    margin: 5px 0;
+    
+  }
+}

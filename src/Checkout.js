@@ -16,7 +16,7 @@ function Checkout() {
       <div className="checkout__left">
         <img
           className="checkout__ad"
-          src="https://www.filepicker.io/api/file/Ons9PGIJSKCAtl19GgJN"
+          src="https://mike.blogs.com/photos/uncategorized/hotmailred.jpg"
           alt=""
         />
         <div>

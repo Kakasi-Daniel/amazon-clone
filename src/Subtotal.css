@@ -29,3 +29,12 @@
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
 }
+
+
+@media (max-width:600px){
+
+  .subtotal{
+    width: 90vw;
+  }
+
+}

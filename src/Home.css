@@ -36,7 +36,12 @@
 
   .home__carousel{
     margin-bottom: 0px;
-    display: none;
+    height: 300px;
+  }
+
+  .home__carousel img{
+    height: 300px;
+    object-fit: cover;
   }
 
 }

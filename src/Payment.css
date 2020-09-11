@@ -40,3 +40,12 @@
   margin-bottom: 10px;
   font-size: 14px;
 }
+
+@media (max-width: 600px){
+
+  .payment__section {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
